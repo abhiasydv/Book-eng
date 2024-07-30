@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header><div class="goBack">
+        <button onclick="goBack()">Go Back</button>
+    </div></header>
+
+    <div class="container">
+
+
+        <h1>Your Profile</h1>
+        <form>
+            <label for="fullName">Full Name:</label>
+            <output type="text" id="fullName" name="fullName" readonly></output>
+            <br>
+            <label for="cityName">City Name:</label>
+            <output type="text" id="cityName" name="cityName" readonly></output>
+            <br>
+            <label for="phoneNo">Phone Number:</label>
+            <output type="tel" id="phoneNo" name="phoneNo" readonly></output>
+            <br>
+            <label for="email">Email:</label>
+            <output type="email" id="email" name="email" readonly></output>
+        </form>
+        <button onclick="openEditContainer()">Edit Profile</button>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <!-- Edit Profile Container -->
+    <div id="editContainer" class="edit-container, container">
+        <form id="editForm">
+            <label for="newFullName">New Full Name:</label>
+            <input type="text" id="newFullName" name="newFullName" required>
+            <br>
+            <label for="newCityName">New City Name:</label>
+            <input type="text" id="newCityName" name="newCityName" required>
+            <br>
+            <label for="newPhoneNo">New Phone Number:</label>
+            <input type="tel" id="newPhoneNo" name="newPhoneNo" required>
+            <br>
+            <button type="button" onclick="updateProfile()">Update Profile</button>
+            <button type="button" onclick="closeEditContainer()">Cancel</button>
+        </form>
+    </div>
+
+    <div class="shop-section">
+    <button id="delete" class="">Delete Book</button>    
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>

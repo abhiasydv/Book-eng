@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Listing</title>
+    <link rel="stylesheet" href="booklisting.css">
+</head>
+
+
+<body>
+    
+    <header>
+        <div class="goBack">
+            <button onclick="goBack()">Go Back</button>
+        </div>
+    </header>
+
+    <form id="bookForm" enctype="multipart/form-data">
+
+        <h1>List The Book</h1>
+
+        <div class="form-group">
+            <label for="bookImage">Book Image:</label>
+            <input type="file" id="bookImage" name="bookImage" accept="image/*">
+            <!-- <img id="imagePreview" src="" alt="Preview" class="image-preview"> -->
+        </div>        
+
+        <div class="form-group">
+            <label for="bookTitle">Book name:</label>
+            <input type="text" id="bookTitle" name="Book Title" required>
+        </div>
+
+        <div class="form-group">
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="Price" required>
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="Description" required>
+        </div>        
+
+        <div class="submit-button">
+            <button type="submit">Submit</button>
+        </div>
+
+    </form>
+
+
+    <script src="booklisting.js"></script>
+</body>
+
+</html>
+

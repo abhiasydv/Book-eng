@@ -1,0 +1,85 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-image: url('../Image/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    height: 100vh;
+}
+
+header {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#bookForm { 
+    padding: 2%;
+    margin: 13%;
+    margin-left: 25%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px  #007bff;
+    text-align: left;
+}
+
+h1 {
+    padding: 5px;
+    margin: 25px;
+}
+
+button {
+    padding: 0.65rem;
+    /* border: 3px black solid; */
+}
+
+.form-group {
+    margin: 10px;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+.image-preview {
+    max-width: 200px;
+}
+
+#output {
+    margin-top: 20px;
+}
+
+.submit-button {
+text-align: center;
+padding: auto;
+margin: auto;
+}
